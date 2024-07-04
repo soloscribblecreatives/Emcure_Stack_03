@@ -29,9 +29,18 @@
 
 .touch2 {
 	position: absolute;
-  left: 854px;
-  top: 98px;
-  width: 165px;
+  left: 754px;
+  top: 78px;
+  width: 262px;
   height: 164px;
+	z-index: 10;
+}
+
+.touch3 {
+	position: absolute;
+  left: 541px;
+  top: 448px;
+  width: 522px;
+  height: 245px;
 	z-index: 10;
 }

@@ -251,7 +251,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="page1"><img src="slide1/1.jpg" width="1080" height="810" alt=""></div><div class="page2"><img src="slide1/2.jpg" width="1080" height="810" alt=""></div><div class="touch1" ontouchstart="touch1()"></div><div class="touch2" ontouchstart="touch2()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="page1"><img src="slide1/1.jpg" width="1080" height="810" alt=""></div><div class="page2"><img src="slide1/2.jpg" width="1080" height="810" alt=""></div><div class="touch1" ontouchstart="touch1()"></div><div class="touch2" ontouchstart="touch2()"></div><div class="touch3" ontouchstart="touch3()"></div>';
 	break;
 }
 
@@ -473,12 +473,28 @@ function takeCover() {
 
 function touch1() {
 	$(".touch1").addClass("touched1");
+	
+	if ($(".touch1").hasClass("touched1") && $(".touch2").hasClass("touched2") && $(".touch3").hasClass("touched3")) {
+		setTimeout(function(){
+			$('.page2').css("display","block");
+		}, 1000);
+	}
 }
 
 function touch2() {
 	$(".touch2").addClass("touched2");
 	
-	if ($(".touch1").hasClass("touched1") && $(".touch2").hasClass("touched2")) {
+	if ($(".touch1").hasClass("touched1") && $(".touch2").hasClass("touched2") && $(".touch3").hasClass("touched3")) {
+		setTimeout(function(){
+			$('.page2').css("display","block");
+		}, 1000);
+	}
+}
+
+function touch3() {
+	$(".touch3").addClass("touched3");
+	
+	if ($(".touch1").hasClass("touched1") && $(".touch2").hasClass("touched2") && $(".touch3").hasClass("touched3")) {
 		setTimeout(function(){
 			$('.page2').css("display","block");
 		}, 1000);
