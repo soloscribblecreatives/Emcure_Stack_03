@@ -479,11 +479,6 @@ function touch1() {
 			$('.page2').css("display","block");
 		}, 1000);
 	}
-	else {
-		$(".touch1").removeClass("touched1");
-		$(".touch2").removeClass("touched2");
-		$(".touch3").removeClass("touched3");
-	}
 }
 
 function touch2() {
@@ -494,11 +489,6 @@ function touch2() {
 			$('.page2').css("display","block");
 		}, 1000);
 	}
-	else {
-		$(".touch1").removeClass("touched1");
-		$(".touch2").removeClass("touched2");
-		$(".touch3").removeClass("touched3");
-	}
 }
 
 function touch3() {
@@ -508,10 +498,5 @@ function touch3() {
 		setTimeout(function(){
 			$('.page2').css("display","block");
 		}, 1000);
-	}
-	else {
-		$(".touch1").removeClass("touched1");
-		$(".touch2").removeClass("touched2");
-		$(".touch3").removeClass("touched3");
 	}
 }
