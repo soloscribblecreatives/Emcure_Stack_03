@@ -1,0 +1,147 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 131px;
+  top: 78px;
+  width: 848px;
+  height: 174px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.1s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 352px;
+  top: 314px;
+  width: 376px;
+  height: 36px;
+	animation: fadeInUp 0.7s;
+	animation-delay: 0.6s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 367px;
+  top: 391px;
+  width: 346px;
+  height: 77px;
+	animation: zoomIn 0.5s;
+	animation-delay: 1.2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s5 {
+	position: absolute;
+  left: 53px;
+  top: 553px;
+  width: 223px;
+  height: 49px;
+	animation: fadeInLeft 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s6 {
+	position: absolute;
+  left: 338px;
+  top: 552px;
+  width: 179px;
+  height: 48px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 2.3s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s7 {
+	position: absolute;
+  left: 577px;
+  top: 553px;
+  width: 177px;
+  height: 44px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 2.6s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s8 {
+	position: absolute;
+  left: 815px;
+  top: 543px;
+  width: 187px;
+  height: 63px;
+	animation: fadeInRight 0.5s;
+	animation-delay: 2.9s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s9 {
+	position: absolute;
+  left: 141px;
+  top: 660px;
+  width: 812px;
+  height: 98px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s10 {
+	position: absolute;
+  left: 399px;
+  top: 651px;
+  width: 88px;
+  height: 37px;
+	animation: flashIt 0.5s 1;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+@keyframes flashIt {
+  20%, 60%, 100% {
+    opacity: 1;
+  }
+
+  0%, 40%, 80% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulseIt {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
