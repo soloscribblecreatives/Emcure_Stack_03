@@ -338,22 +338,22 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide1/s2.png"/></div><div class="s3"><img src="slide1/s3.png"/></div><div class="s4"><img src="slide1/s4.png"/></div><div class="s5"><img src="slide1/s5.png"/></div><div class="s6"><img src="slide1/s6.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide1/s2.png"/></div><div class="s3"><img src="slide1/s3.png"/></div><div class="s4"><img src="slide1/s4.png"/></div><div class="s5"><img src="slide1/s5.png"/></div><div class="s6"><img src="slide1/s6.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide2/s2.png"/></div><div class="s3"><img src="slide2/s3.png"/></div><div class="s4"><img src="slide2/s4.png"/></div><div class="s5"><img src="slide2/s5.png"/></div><div class="s6"><img src="slide2/s6.png"/></div><div class="s7"><img src="slide2/s7.png"/></div><div class="s8"><img src="slide2/s8.png"/></div><div class="s9"><img src="slide2/s9.png"/></div><div class="s10"><img src="slide2/s10.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide2/s2.png"/></div><div class="s3"><img src="slide2/s3.png"/></div><div class="s4"><img src="slide2/s4.png"/></div><div class="s5"><img src="slide2/s5.png"/></div><div class="s6"><img src="slide2/s6.png"/></div><div class="s7"><img src="slide2/s7.png"/></div><div class="s8"><img src="slide2/s8.png"/></div><div class="s9"><img src="slide2/s9.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s1"><img src="slide3/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide3/s2.png"/></div><div class="s3"><img src="slide3/s3.png"/></div><div class="s4"><img src="slide3/s4.png"/></div><div class="s5"><img src="slide3/s5.png"/></div><div class="s6"><img src="slide3/s6.png"/></div><div class="s7"><img src="slide3/s7.png"/></div><div class="s8"><img src="slide3/s8.png"/></div><div class="s9"><img src="slide3/s9.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s1"><img src="slide3/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide3/s2.png"/></div><div class="s3"><img src="slide3/s3.png"/></div><div class="s4"><img src="slide3/s4.png"/></div><div class="s5"><img src="slide3/s5.png"/></div><div class="s6"><img src="slide3/s6.png"/></div><div class="s7"><img src="slide3/s7.png"/></div><div class="s8"><img src="slide3/s8.png"/></div><div class="s9"><img src="slide3/s9.png"/></div><div class="s10"><img src="slide3/s10.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s1"><img src="slide4/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide4/s2.png"/></div><div class="s3"><img src="slide4/s3.png"/></div><div class="s4"><img src="slide4/s4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s1"><video onended="showBtn();" width="1080" height="810" autoplay><source src="slide4/s1.mp4" type="video/mp4"></video>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s1"><video onended="showBtn();" width="1080" height="810" autoplay><source src="slide5/s1.mp4" type="video/mp4"></video>';
+	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s1"><img src="slide5/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide5/s2.png"/></div><div class="s3"><img src="slide5/s3.png"/></div><div class="s4"><img src="slide5/s4.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s1"><img src="slide6/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide6/s2.png"/></div><div class="s3"><img src="slide6/s3.png"/></div><div class="s4"><img src="slide6/s4.png"/></div><div class="s5"><img src="slide6/s5.png"/></div><div class="s6"><img src="slide6/s6.png"/></div><div class="s7"><img src="slide6/s7.png"/></div><div class="s8"><img src="slide6/s8.png"/></div><div class="s9"><img src="slide6/s9.png"/></div><div class="s10"><img src="slide6/s10.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s1"><img src="slide6/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide6/s2.png"/></div><div class="s3"><img src="slide6/s3.png"/></div><div class="s4"><img src="slide6/s4.png"/></div><div class="s5"><img src="slide6/s5.png"/></div><div class="s6"><img src="slide6/s6.png"/></div><div class="s7"><img src="slide6/s7.png"/></div><div class="s8"><img src="slide6/s8.png"/></div><div class="s9"><img src="slide6/s9.png"/></div><div class="s10"><img src="slide6/s10.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
 	break;
 }
 
@@ -443,11 +443,11 @@ function open_page2(url,page_id,count){
 	//alert(currentslide);
 	document.getElementById("click_through").innerHTML='';
 	
-	if(page_id == 3){
+	if(page_id == 2){
 		document.getElementById("click_through").innerHTML='<div class="blocker" onclick="moveNext()"></div>';
 	}
-	if(page_id == 5){
-		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="s2" onclick="moveNext()"><img src="slide5/s2.png"/></div>';
+	if(page_id == 4){
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="s2" onclick="moveNext()"><img src="slide4/s2.png"/></div>';
 	}
 	
 
