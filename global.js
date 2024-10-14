@@ -1,8 +1,8 @@
 var arrSurveyQuestions = {
    3: "What is the estimated VTE risk in this case profile?",
    4: "Which except the following options is recommended by ACCP for thromboprophylaxis in acutely ill hospitalized patient?",
-   5: "Should pharmacological thromboprophylaxis be continued in this critically ill patient?",
-   6: "Which of the following options is recommended for pharmacological thromboprophylaxis in critically ill patient?"
+   6: "Should pharmacological thromboprophylaxis be continued in this critically ill patient?",
+   7: "Which of the following options is recommended for pharmacological thromboprophylaxis in critically ill patient?"
 };
 /*Code by android developers start here*/
 var startLoc = null;
@@ -179,7 +179,7 @@ else{
 	
  } 
  
-	if(nextSlideNo <= 9){//number 3 is number of total slides present
+	if(nextSlideNo <= 10){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -252,10 +252,10 @@ if(direction == 'b') {
 	
 }else {
 	
-	if(page_id <= 9){
+	if(page_id <= 10){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 10){
+		if(page_id == 11){
             flag=1;
         }
 	}
@@ -348,25 +348,28 @@ switch(pg_id){
 	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide3/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide3/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide3/s3.png"/></div><div class="select1"><img src="slide3/s4.png"/></div><div class="select2"><img src="slide3/s5.png"/></div><div class="select3"><img src="slide3/s6.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="vid0"><video autoplay onplay="onPlay0()" onended="onEnded0()" id="vid0" width="1080" height="810"><source src="slide3/s0.mp4" type="video/mp4"></video></div><div class="vid1"><video onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide3/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide3/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide3/s3.png"/></div><div class="select1"><img src="slide3/s4.png"/></div><div class="select2"><img src="slide3/s5.png"/></div><div class="select3"><img src="slide3/s6.png"/></div>';
 	break;
 	case 4:
 	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide4/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide4/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide4/s3.png"/></div><div class="select1"><img src="slide4/s4.png"/></div><div class="select2"><img src="slide4/s5.png"/></div><div class="select3"><img src="slide4/s6.png"/></div><div class="select4"><img src="slide4/s7.png"/></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide5/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide5/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide5/s3.png"/></div><div class="select1"><img src="slide5/s4.png"/></div><div class="select2"><img src="slide5/s5.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s1"><img src="slide5/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide6/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide6/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide6/s3.png"/></div><div class="select1"><img src="slide6/s4.png"/></div><div class="select2"><img src="slide6/s5.png"/></div><div class="select3"><img src="slide6/s6.png"/></div><div class="select4"><img src="slide6/s7.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide6/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide6/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide6/s3.png"/></div><div class="select1"><img src="slide6/s4.png"/></div><div class="select2"><img src="slide6/s5.png"/></div>';
 	break;
 	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="s1"><img src="slide7/s1.jpg" width="1080" height="810" alt=""/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide7/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide7/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide7/s3.png"/></div><div class="select1"><img src="slide7/s4.png"/></div><div class="select2"><img src="slide7/s5.png"/></div><div class="select3"><img src="slide7/s6.png"/></div><div class="select4"><img src="slide7/s7.png"/></div>';
 	break;
 	case 8:
 	content='<link rel="stylesheet" type="text/css" href="slide8/slide8.css" media="screen"/><div class="s1"><img src="slide8/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 	case 9:
 	content='<link rel="stylesheet" type="text/css" href="slide9/slide9.css" media="screen"/><div class="s1"><img src="slide9/s1.jpg" width="1080" height="810" alt=""/></div>';
+	break;
+	case 10:
+	content='<link rel="stylesheet" type="text/css" href="slide10/slide10.css" media="screen"/><div class="s1"><img src="slide10/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 }
 
@@ -457,7 +460,7 @@ function open_page2(url,page_id,count){
 	document.getElementById("click_through").innerHTML='';
 	
 	if(page_id == 3){
-		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="vidPlay" onclick="vidPlay()"></div><div class="slide02_inline_wraper" id="buttons">\
 		<div id="slide01_question01_choices01" class="control-group">\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Very Low Risk"/><div class="control_indicator" id="radio01" onclick="select1()"></div></label>\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Low Risk"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
@@ -513,13 +516,13 @@ function open_page2(url,page_id,count){
 	}
 	
 	
-	if(page_id == 5){
+	if(page_id == 6){
 		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
 		<div id="slide01_question01_choices01" class="control-group">\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Yes"/><div class="control_indicator" id="radio01" onclick="select1();s5opt1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Yes"/><div class="control_indicator" id="radio01" onclick="select1();s6opt1()"></div></label>\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="No"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
 		</div>\
-			<div class="submit_button" onclick="savedata(1,1,5,\'' + page_id + '\');endTime1(5);hidesubmitonclick();"></div>\
+			<div class="submit_button" onclick="savedata(1,1,6,\'' + page_id + '\');endTime1(6);hidesubmitonclick();"></div>\
 		</div>';
 		
 		$('#slide01_question01_choices01').delay(10).fadeIn();
@@ -540,15 +543,15 @@ function open_page2(url,page_id,count){
 	}
 	
 	
-	if(page_id == 6){
+	if(page_id == 7){
 		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
 		<div id="slide01_question01_choices01" class="control-group">\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Low Molecular Weight Heparin (LMWH)"/><div class="control_indicator" id="radio01" onclick="select1()"></div></label>\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Unfractionated Heparin (UFH)"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Low dose unfractionated heparin (LDUH)"/><div class="control_indicator" id="radio03" onclick="select3()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="All of the above"/><div class="control_indicator" id="radio04" onclick="select4();s6opt4()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="All of the above"/><div class="control_indicator" id="radio04" onclick="select4();s7opt4()"></div></label>\
 		</div>\
-			<div class="submit_button" onclick="savedata(1,1,6,\'' + page_id + '\');endTime1(6);hidesubmitonclick();"></div>\
+			<div class="submit_button" onclick="savedata(1,1,7,\'' + page_id + '\');endTime1(7);hidesubmitonclick();"></div>\
 		</div>';
 		
 		$('#slide01_question01_choices01').delay(10).fadeIn();
@@ -668,9 +671,7 @@ function hidesubmitonclick()
 }
 
 function goRight() {
-	setTimeout(function(){
-		go_nav('f');
-	}, 1000);
+	go_nav('f');
 }
 
 function savedata(answer,type,questionNumber,page_id) {	
@@ -685,12 +686,12 @@ function savedata(answer,type,questionNumber,page_id) {
 		var varanswer = selectedAnswer1;
 	}
 	
-	else if(questionNumber == 5){
+	else if(questionNumber == 6){
 		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
 		var varanswer = selectedAnswer1;
 	}
 	
-	else if(questionNumber == 6){
+	else if(questionNumber == 7){
 		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
 		var varanswer = selectedAnswer1;
 	}
@@ -721,10 +722,20 @@ function savedata(answer,type,questionNumber,page_id) {
 	//window.messageHandler.postMessage(JSON.stringify(params));
 }
 
+function onEnded0() {
+	$('.vidPlay').css("display","block");
+}
+
+function vidPlay() {
+	$('.vidPlay').css("display","none");
+	$(".vid1").css("display","block");
+	document.getElementById("vid1").play();
+}
+
 function onPlay1() {
 	setTimeout(function(){
 		$('.options').css("display","block");
-	}, 3500);
+	}, 2500);
 }
 
 function onEnded1() {
@@ -776,12 +787,12 @@ function s4opt1() {
 	document.getElementById("vid2").play();
 }
 
-function s5opt1() {
+function s6opt1() {
 	$(".vid2").css("display","block");
 	document.getElementById("vid2").play();
 }
 
-function s6opt4() {
+function s7opt4() {
 	$(".vid2").css("display","block");
 	document.getElementById("vid2").play();
 }

@@ -109,6 +109,7 @@ html[xmlns] .clearfix {
 	position: relative;
 	top: 380px;
 	opacity: .8;
+	display: none;
 	z-index: 999;
 	visibility: visible;
 }

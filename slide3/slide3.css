@@ -3,18 +3,33 @@
 	padding: 0px;
 }
 
-#vid1 {
+#vid0 {
     position: absolute;
     width: 1080px;
     height: 810px;
 	z-index: 1;
 }
 
-.vid1 {
+.vid0 {
 	position: absolute;
 	width: 1080px;
 	height: 810px;
 	z-index: 1;
+}
+
+#vid1 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 3;
+}
+
+.vid1 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 3;
 }
 
 #vid2 {
@@ -30,6 +45,14 @@
 	height: 810px;
 	display: none;
 	z-index: 5;
+}
+
+.vidPlay {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 22;
 }
 
 .options {

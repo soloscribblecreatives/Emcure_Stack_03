@@ -3,9 +3,140 @@
 	padding: 0px;
 }
 
-.s1 {
+#vid1 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 1;
+}
+
+.vid1 {
 	position: absolute;
 	width: 1080px;
 	height: 810px;
 	z-index: 1;
+}
+
+#vid2 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 5;
+}
+
+.vid2 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 5;
+}
+
+.options {
+	position: absolute;
+	left: 224px;
+	top: 605px;
+	width: 632px;
+	height: 165px;
+  	animation: fadeIn 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+    display: none;
+	z-index: 10;
+}
+
+.submit_button {
+	position: absolute;
+	background: url(pop.png) no-repeat left top;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	animation: fadeIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.select1 {
+	position: absolute;
+  left: 224px;
+  top: 605px;
+  width: 308px;
+  height: 75px;
+  display: none;
+	z-index: 15;
+}
+
+.select2 {
+	position: absolute;
+  left: 547px;
+  top: 605px;
+  width: 308px;
+  height: 75px;
+  display: none;
+	z-index: 15;
+}
+
+.select3 {
+	position: absolute;
+  left: 225px;
+  top: 696px;
+  width: 307px;
+  height: 74px;
+  display: none;
+	z-index: 15;
+}
+
+.select4 {
+	position: absolute;
+  left: 547px;
+  top: 696px;
+  width: 309px;
+  height: 74px;
+  display: none;
+	z-index: 15;
+}
+
+
+#radio01 {
+    position: absolute;
+  left: 224px;
+  top: 605px;
+  width: 308px;
+  height: 75px;
+  display: none;
+	z-index: 25;
+}
+
+#radio02 {
+    position: absolute;
+  left: 547px;
+  top: 605px;
+  width: 308px;
+  height: 75px;
+  display: none;
+	z-index: 25;
+}
+
+#radio03 {
+    position: absolute;
+  left: 225px;
+  top: 696px;
+  width: 307px;
+  height: 74px;
+  display: none;
+	z-index: 25;
+}
+
+#radio04 {
+    position: absolute;
+  left: 547px;
+  top: 696px;
+  width: 309px;
+  height: 74px;
+  display: none;
+	z-index: 25;
 }
