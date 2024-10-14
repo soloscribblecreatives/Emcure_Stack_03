@@ -1,42 +1,142 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
 
-.s1 {
+#vid1 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 1;
+}
+
+.vid1 {
 	position: absolute;
 	width: 1080px;
 	height: 810px;
 	z-index: 1;
 }
 
-.s2 {
-	position: absolute;
-  left: 389px;
-  top: 612px;
-  width: 301px;
-  height: 59px;
-	animation: pulse 1s infinite;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	display: none;
-	z-index: 150;
+#vid2 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 5;
 }
 
-@keyframes pulseIt {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-	opacity: 0;
-  }
+.vid2 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 5;
+}
 
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
+.options {
+	position: absolute;
+	left: 224px;
+	top: 604px;
+	width: 632px;
+	height: 166px;
+  	animation: fadeIn 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+    display: none;
+	z-index: 10;
+}
 
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+.submit_button {
+	position: absolute;
+	background: url(pop.png) no-repeat left top;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	animation: fadeIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.select1 {
+	position: absolute;
+  left: 224px;
+  top: 604px;
+  width: 309px;
+  height: 75px;
+  display: none;
+	z-index: 15;
+}
+
+.select2 {
+	position: absolute;
+  left: 547px;
+  top: 605px;
+  width: 309px;
+  height: 74px;
+  display: none;
+	z-index: 15;
+}
+
+.select3 {
+	position: absolute;
+  left: 225px;
+  top: 696px;
+  width: 307px;
+  height: 74px;
+  display: none;
+	z-index: 15;
+}
+
+.select4 {
+	position: absolute;
+  left: 547px;
+  top: 696px;
+  width: 308px;
+  height: 74px;
+  display: none;
+	z-index: 15;
+}
+
+
+#radio01 {
+    position: absolute;
+  left: 224px;
+  top: 604px;
+  width: 309px;
+  height: 75px;
+  display: none;
+	z-index: 25;
+}
+
+#radio02 {
+    position: absolute;
+  left: 547px;
+  top: 605px;
+  width: 309px;
+  height: 74px;
+  display: none;
+	z-index: 25;
+}
+
+#radio03 {
+    position: absolute;
+  left: 225px;
+  top: 696px;
+  width: 307px;
+  height: 74px;
+  display: none;
+	z-index: 25;
+}
+
+#radio04 {
+    position: absolute;
+  left: 547px;
+  top: 696px;
+  width: 308px;
+  height: 74px;
+  display: none;
+	z-index: 25;
 }

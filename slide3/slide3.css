@@ -1,119 +1,122 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
 
-.s1 {
+#vid1 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 1;
+}
+
+.vid1 {
 	position: absolute;
 	width: 1080px;
 	height: 810px;
 	z-index: 1;
 }
 
-.s2 {
+#vid2 {
+    position: absolute;
+    width: 1080px;
+    height: 810px;
+	z-index: 5;
+}
+
+.vid2 {
 	position: absolute;
-  left: 177px;
-  top: 43px;
-  width: 212px;
-  height: 213px;
-	animation: fadeInLeft 0.5s;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 5;
+}
+
+.options {
+	position: absolute;
+    left: 101px;
+    top: 631px;
+    width: 827px;
+    height: 75px;
+  	animation: fadeIn 0.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
-	z-index: 5;
+    display: none;
+	z-index: 10;
 }
 
-.s3 {
+.submit_button {
 	position: absolute;
-  left: 401px;
-  top: 21px;
-  width: 282px;
-  height: 234px;
-	animation: fadeInDown 0.5s;
-	animation-delay: 0.3s;
+	background: url(pop.png) no-repeat left top;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	animation: fadeIn 0.5s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
-	z-index: 5;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
 }
 
-.s4 {
+.select1 {
 	position: absolute;
-  left: 697px;
-  top: 69px;
-  width: 267px;
-  height: 269px;
-	animation: fadeInRight 0.5s;
-	animation-delay: 0.6s;
-	animation-fill-mode: both;
-	z-index: 5;
+  left: 100px;
+  top: 631px;
+  width: 250px;
+  height: 75px;
+  display: none;
+	z-index: 15;
 }
 
-.s5 {
+.select2 {
 	position: absolute;
-  left: 697px;
-  top: 351px;
-  width: 299px;
-  height: 219px;
-	animation: fadeInRight 0.5s;
-	animation-delay: 0.9s;
-	animation-fill-mode: both;
-	z-index: 5;
+  left: 389px;
+  top: 631px;
+  width: 251px;
+  height: 75px;
+  display: none;
+	z-index: 15;
 }
 
-.s6 {
+.select3 {
 	position: absolute;
-  left: 697px;
-  top: 583px;
-  width: 212px;
-  height: 212px;
-	animation: fadeInRight 0.5s;
-	animation-delay: 1.2s;
-	animation-fill-mode: both;
-	z-index: 5;
+  left: 678px;
+  top: 631px;
+  width: 250px;
+  height: 75px;
+  display: none;
+	z-index: 15;
 }
 
-.s7 {
-	position: absolute;
-  left: 401px;
-  top: 545px;
-  width: 282px;
-  height: 235px;
-	animation: fadeInUp 0.5s;
-	animation-delay: 1.5s;
-	animation-fill-mode: both;
-	z-index: 5;
+
+#radio01 {
+    position: absolute;
+  left: 100px;
+  top: 631px;
+  width: 250px;
+  height: 75px;
+  display: none;
+	z-index: 25;
 }
 
-.s8 {
-	position: absolute;
-  left: 139px;
-  top: 500px;
-  width: 248px;
-  height: 249px;
-	animation: fadeInLeft 0.5s;
-	animation-delay: 1.8s;
-	animation-fill-mode: both;
-	z-index: 5;
+#radio02 {
+    position: absolute;
+  left: 389px;
+  top: 631px;
+  width: 251px;
+  height: 75px;
+  display: none;
+	z-index: 25;
 }
 
-.s9 {
-	position: absolute;
-  left: 87px;
-  top: 268px;
-  width: 300px;
-  height: 220px;
-	animation: fadeInLeft 0.5s;
-	animation-delay: 2.1s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s10 {
-	position: absolute;
-  left: 399px;
-  top: 265px;
-  width: 287px;
-  height: 270px;
-	animation: zoomIn 0.5s;
-	animation-delay: 2.4s;
-	animation-fill-mode: both;
-	z-index: 5;
+#radio03 {
+    position: absolute;
+  left: 678px;
+  top: 631px;
+  width: 250px;
+  height: 75px;
+  display: none;
+	z-index: 25;
 }

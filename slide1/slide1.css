@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -8,64 +8,4 @@
 	width: 1080px;
 	height: 810px;
 	z-index: 1;
-}
-
-.s2 {
-	position: absolute;
-  left: 350px;
-  top: 261px;
-  width: 380px;
-  height: 549px;
-	animation: slideInUp 0.7s;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s3 {
-	position: absolute;
-  left: 198px;
-  top: 15px;
-  width: 700px;
-  height: 131px;
-	animation: fadeInDown 0.7s;
-	animation-delay: 0.6s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s4 {
-	position: absolute;
-  left: 420px;
-  top: 182px;
-  width: 249px;
-  height: 73px;
-	animation: zoomIn 0.7s;
-	animation-delay: 1.3s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s5 {
-	position: absolute;
-  left: 132px;
-  top: 207px;
-  width: 181px;
-  height: 545px;
-	animation: fadeInLeft 0.7s;
-	animation-delay: 1.6s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s6 {
-	position: absolute;
-  left: 740px;
-  top: 207px;
-  width: 207px;
-  height: 544px;
-	animation: fadeInRight 0.7s;
-	animation-delay: 1.6s;
-	animation-fill-mode: both;
-	z-index: 5;
 }

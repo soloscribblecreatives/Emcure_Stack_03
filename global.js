@@ -1,4 +1,8 @@
 var arrSurveyQuestions = {
+   3: "What is the estimated VTE risk in this case profile?",
+   4: "Which except the following options is recommended by ACCP for thromboprophylaxis in acutely ill hospitalized patient?",
+   5: "Should pharmacological thromboprophylaxis be continued in this critically ill patient?",
+   6: "Which of the following options is recommended for pharmacological thromboprophylaxis in critically ill patient?"
 };
 /*Code by android developers start here*/
 var startLoc = null;
@@ -175,7 +179,7 @@ else{
 	
  } 
  
-	if(nextSlideNo <= 6){//number 3 is number of total slides present
+	if(nextSlideNo <= 9){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -248,10 +252,10 @@ if(direction == 'b') {
 	
 }else {
 	
-	if(page_id <= 6){
+	if(page_id <= 9){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 7){
+		if(page_id == 10){
             flag=1;
         }
 	}
@@ -338,22 +342,31 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide1/s2.png"/></div><div class="s3"><img src="slide1/s3.png"/></div><div class="s4"><img src="slide1/s4.png"/></div><div class="s5"><img src="slide1/s5.png"/></div><div class="s6"><img src="slide1/s6.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide2/s2.png"/></div><div class="s3"><img src="slide2/s3.png"/></div><div class="s4"><img src="slide2/s4.png"/></div><div class="s5"><img src="slide2/s5.png"/></div><div class="s6"><img src="slide2/s6.png"/></div><div class="s7"><img src="slide2/s7.png"/></div><div class="s8"><img src="slide2/s8.png"/></div><div class="s9"><img src="slide2/s9.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s1"><img src="slide3/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide3/s2.png"/></div><div class="s3"><img src="slide3/s3.png"/></div><div class="s4"><img src="slide3/s4.png"/></div><div class="s5"><img src="slide3/s5.png"/></div><div class="s6"><img src="slide3/s6.png"/></div><div class="s7"><img src="slide3/s7.png"/></div><div class="s8"><img src="slide3/s8.png"/></div><div class="s9"><img src="slide3/s9.png"/></div><div class="s10"><img src="slide3/s10.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide3/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide3/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide3/s3.png"/></div><div class="select1"><img src="slide3/s4.png"/></div><div class="select2"><img src="slide3/s5.png"/></div><div class="select3"><img src="slide3/s6.png"/></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s1"><video onended="showBtn();" width="1080" height="810" autoplay><source src="slide4/s1.mp4" type="video/mp4"></video>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide4/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide4/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide4/s3.png"/></div><div class="select1"><img src="slide4/s4.png"/></div><div class="select2"><img src="slide4/s5.png"/></div><div class="select3"><img src="slide4/s6.png"/></div><div class="select4"><img src="slide4/s7.png"/></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s1"><img src="slide5/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide5/s2.png"/></div><div class="s3"><img src="slide5/s3.png"/></div><div class="s4"><img src="slide5/s4.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide5/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide5/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide5/s3.png"/></div><div class="select1"><img src="slide5/s4.png"/></div><div class="select2"><img src="slide5/s5.png"/></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s1"><img src="slide6/s1.png" width="1080" height="810" alt=""/></div><div class="s2"><img src="slide6/s2.png"/></div><div class="s3"><img src="slide6/s3.png"/></div><div class="s4"><img src="slide6/s4.png"/></div><div class="s5"><img src="slide6/s5.png"/></div><div class="s6"><img src="slide6/s6.png"/></div><div class="s7"><img src="slide6/s7.png"/></div><div class="s8"><img src="slide6/s8.png"/></div><div class="s9"><img src="slide6/s9.png"/></div><div class="s10"><img src="slide6/s10.png"/></div><audio autoplay><source src="slide1/bgm.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="vid1"><video autoplay onplay="onPlay1()" onended="onEnded1()" id="vid1" width="1080" height="810"><source src="slide6/s1.mp4" type="video/mp4"></video></div><div class="vid2"><video onended="onEnded2()" id="vid2" width="1080" height="810"><source src="slide6/s2.mp4" type="video/mp4"></video></div><div class="options"><img src="slide6/s3.png"/></div><div class="select1"><img src="slide6/s4.png"/></div><div class="select2"><img src="slide6/s5.png"/></div><div class="select3"><img src="slide6/s6.png"/></div><div class="select4"><img src="slide6/s7.png"/></div>';
+	break;
+	case 7:
+	content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="s1"><img src="slide7/s1.jpg" width="1080" height="810" alt=""/></div>';
+	break;
+	case 8:
+	content='<link rel="stylesheet" type="text/css" href="slide8/slide8.css" media="screen"/><div class="s1"><img src="slide8/s1.jpg" width="1080" height="810" alt=""/></div>';
+	break;
+	case 9:
+	content='<link rel="stylesheet" type="text/css" href="slide9/slide9.css" media="screen"/><div class="s1"><img src="slide9/s1.jpg" width="1080" height="810" alt=""/></div>';
 	break;
 }
 
@@ -443,11 +456,116 @@ function open_page2(url,page_id,count){
 	//alert(currentslide);
 	document.getElementById("click_through").innerHTML='';
 	
-	if(page_id == 2){
-		document.getElementById("click_through").innerHTML='<div class="blocker" onclick="moveNext()"></div>';
+	if(page_id == 3){
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
+		<div id="slide01_question01_choices01" class="control-group">\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Very Low Risk"/><div class="control_indicator" id="radio01" onclick="select1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Low Risk"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="High Risk"/><div class="control_indicator" id="radio03" onclick="select3();s3opt3()"></div></label>\
+		</div>\
+			<div class="submit_button" onclick="savedata(1,1,3,\'' + page_id + '\');endTime1(3);hidesubmitonclick();"></div>\
+		</div>';
+		
+		$('#slide01_question01_choices01').delay(10).fadeIn();
+
+		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){
+			if ($("input[name='checkB01']:checked").val()){
+				var test = $(this).val();	
+			}			
+		});
+
+		$(document).on("click", ".submit_button", function(){
+			$('.slide01_submit_popup_content').fadeIn();
+		});
+
+		$(document).on("click", ".slide01_submit_popup_close_btn_mask", function(){
+			$('.slide01_submit_popup_content').fadeOut();
+		});
 	}
+	
+	
 	if(page_id == 4){
-		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="s2" onclick="moveNext()"><img src="slide4/s2.png"/></div>';
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
+		<div id="slide01_question01_choices01" class="control-group">\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Low Molecular Weight Heparin (LMWH)"/><div class="control_indicator" id="radio01" onclick="select1();s4opt1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Unfractionated Heparin (UFH)"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Fondaparinux"/><div class="control_indicator" id="radio03" onclick="select3()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Direct Acting Oral Anticoagulant (DOAC)"/><div class="control_indicator" id="radio04" onclick="select4()"></div></label>\
+		</div>\
+			<div class="submit_button" onclick="savedata(1,1,4,\'' + page_id + '\');endTime1(4);hidesubmitonclick();"></div>\
+		</div>';
+		
+		$('#slide01_question01_choices01').delay(10).fadeIn();
+
+		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){
+			if ($("input[name='checkB01']:checked").val()){
+				var test = $(this).val();	
+			}			
+		});
+
+		$(document).on("click", ".submit_button", function(){
+			$('.slide01_submit_popup_content').fadeIn();
+		});
+
+		$(document).on("click", ".slide01_submit_popup_close_btn_mask", function(){
+			$('.slide01_submit_popup_content').fadeOut();
+		});
+	}
+	
+	
+	if(page_id == 5){
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
+		<div id="slide01_question01_choices01" class="control-group">\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Yes"/><div class="control_indicator" id="radio01" onclick="select1();s5opt1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="No"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
+		</div>\
+			<div class="submit_button" onclick="savedata(1,1,5,\'' + page_id + '\');endTime1(5);hidesubmitonclick();"></div>\
+		</div>';
+		
+		$('#slide01_question01_choices01').delay(10).fadeIn();
+
+		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){
+			if ($("input[name='checkB01']:checked").val()){
+				var test = $(this).val();	
+			}			
+		});
+
+		$(document).on("click", ".submit_button", function(){
+			$('.slide01_submit_popup_content').fadeIn();
+		});
+
+		$(document).on("click", ".slide01_submit_popup_close_btn_mask", function(){
+			$('.slide01_submit_popup_content').fadeOut();
+		});
+	}
+	
+	
+	if(page_id == 6){
+		document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="slide02_inline_wraper" id="buttons">\
+		<div id="slide01_question01_choices01" class="control-group">\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Low Molecular Weight Heparin (LMWH)"/><div class="control_indicator" id="radio01" onclick="select1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Unfractionated Heparin (UFH)"/><div class="control_indicator" id="radio02" onclick="select2()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Low dose unfractionated heparin (LDUH)"/><div class="control_indicator" id="radio03" onclick="select3()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="All of the above"/><div class="control_indicator" id="radio04" onclick="select4();s6opt4()"></div></label>\
+		</div>\
+			<div class="submit_button" onclick="savedata(1,1,6,\'' + page_id + '\');endTime1(6);hidesubmitonclick();"></div>\
+		</div>';
+		
+		$('#slide01_question01_choices01').delay(10).fadeIn();
+
+		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){
+			if ($("input[name='checkB01']:checked").val()){
+				var test = $(this).val();	
+			}			
+		});
+
+		$(document).on("click", ".submit_button", function(){
+			$('.slide01_submit_popup_content').fadeIn();
+		});
+
+		$(document).on("click", ".slide01_submit_popup_close_btn_mask", function(){
+			$('.slide01_submit_popup_content').fadeOut();
+		});
 	}
 	
 
@@ -542,6 +660,10 @@ function endTime1(currentSlideNo){
 function hidesubmitonclick()
 {
 	$('.submit_button').css("display","none");
+	$('#radio01').css("display","none");
+	$('#radio02').css("display","none");
+	$('#radio03').css("display","none");
+	$('#radio04').css("display","none");
 	goRight();
 }
 
@@ -551,25 +673,24 @@ function goRight() {
 	}, 1000);
 }
 
-function select1() {
-	$('.select1').css("display","block");
-	$('.select2').css("display","none");
-	$(".submit_button").css("display","block");
-}
-
-function select2() {
-	$('.select1').css("display","none");
-	$('.select2').css("display","block");
-	$(".submit_button").css("display","block");
-}
-
-function savedata(answer,type,questionNumber,page_id) {
-	$('#radio01').css("display","none");
-	$('#radio02').css("display","none");
-	$(".submit_button").css("display","none");
+function savedata(answer,type,questionNumber,page_id) {	
 	
+	if(questionNumber == 3){
+		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
+		var varanswer = selectedAnswer1;
+	}
 	
-	if(questionNumber == 2){
+	else if(questionNumber == 4){
+		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
+		var varanswer = selectedAnswer1;
+	}
+	
+	else if(questionNumber == 5){
+		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
+		var varanswer = selectedAnswer1;
+	}
+	
+	else if(questionNumber == 6){
 		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
 		var varanswer = selectedAnswer1;
 	}
@@ -600,35 +721,67 @@ function savedata(answer,type,questionNumber,page_id) {
 	//window.messageHandler.postMessage(JSON.stringify(params));
 }
 
-
-function initVideo() {
-    var video = $("#asset2 video")[0]
-    video.onended = () => { open_page(null, 2) }
+function onPlay1() {
+	setTimeout(function(){
+		$('.options').css("display","block");
+	}, 3500);
 }
 
-function initSound() {
-    $(document).on("click", "#radio01, #radio02", function() {
-        var audioYes = $("#yesaudio")[0]
-        var audioNo = $("#noaudio")[0]
-        var answer = $(this).data("answer")
-        if (answer == 'yes') {
-            audioYes.play()
-			$("#asset4").addClass("pulseIt");
-			$("#asset5").removeClass("pulseIt");
-        } else if (answer == 'no') {
-            audioNo.play()
-			$("#asset5").addClass("pulseIt");
-			$("#asset4").removeClass("pulseIt");
-        }
-    })
+function onEnded1() {
+	$('#radio01').css("display","block");
+	$('#radio02').css("display","block");
+	$('#radio03').css("display","block");
+	$('#radio04').css("display","block");
 }
 
-
-
-function showBtn() {
-	$('.s2').css("display","block");
+function onEnded2() {
+	$('.submit_button').css("display","block");
 }
 
-function moveNext() {
-	go_nav('f');
-};
+function select1() {
+	$('.select1').css("display","block");
+	$('.select2').css("display","none");
+	$('.select3').css("display","none");
+	$('.select4').css("display","none");
+}
+
+function select2() {
+	$('.select1').css("display","none");
+	$('.select2').css("display","block");
+	$('.select3').css("display","none");
+	$('.select4').css("display","none");
+}
+
+function select3() {
+	$('.select1').css("display","none");
+	$('.select2').css("display","none");
+	$('.select3').css("display","block");
+	$('.select4').css("display","none");
+}
+
+function select4() {
+	$('.select1').css("display","none");
+	$('.select2').css("display","none");
+	$('.select3').css("display","none");
+	$('.select4').css("display","block");
+}
+
+function s3opt3() {
+	$(".vid2").css("display","block");
+	document.getElementById("vid2").play();
+}
+
+function s4opt1() {
+	$(".vid2").css("display","block");
+	document.getElementById("vid2").play();
+}
+
+function s5opt1() {
+	$(".vid2").css("display","block");
+	document.getElementById("vid2").play();
+}
+
+function s6opt4() {
+	$(".vid2").css("display","block");
+	document.getElementById("vid2").play();
+}

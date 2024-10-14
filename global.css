@@ -109,7 +109,6 @@ html[xmlns] .clearfix {
 	position: relative;
 	top: 380px;
 	opacity: .8;
-	display: none;
 	z-index: 999;
 	visibility: visible;
 }
@@ -240,77 +239,12 @@ html[xmlns] .clearfix {
 	color: #ffffff;
 }
 
-
-#radio01 {
-   position: absolute;
-    left: 6px;
-    top: -150px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
-
-#radio02 {
-   position: absolute;
-    left: 446px;
-    top: -162px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
-#radio03-1 {
-   position: absolute;
-    left: 162px;
-    top: -92px;
-  width: 521px;
-  height: 59px;
-	 
-}
-
-#radio03-2 {
-   position: absolute;
-    left: 6px;
-    top: -92px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
-#radio03 {
-   position: absolute;
-    left: 226px;
-    top: -92px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
-#radio04 {
-   position: absolute;
-    left: 446px;
-    top: -104px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
-#radio05 {
-   position: absolute;
-    left: 226px;
-    top: -32px;
-  width: 392px;
-  height: 59px;
-	 
-}
-
 /*Page Styles CSS*/
 
 /* Slide01 Styles*/
 .slide01_home_btn_mask { width: 61px; height: 78px; position: absolute; left: 43px; top: 0px; z-index: 310; }
-#slide01_question01_choices01 { width:45px; height:418px; position:absolute;left: 48px;top: 416px; z-index:310; display:none; }
-#slide01_question01_choices02 { width:45px; height:418px; position:absolute; left:720px; top:222px; z-index:310; display:none; }
+#slide01_question01_choices01 { position:absolute; display:none; }
+#slide01_question01_choices02 { position:absolute; display:none; }
 .slide01_next { width: 45px; height: 46px; position: absolute; left: 1217px; top: 343px; z-index: 310; display:none; }
 .slide01_submit_popup_content { width:1280px; height:726px; background: url('slide01/slide01_popup01.png') no-repeat left top; position:absolute; left:0px ; top:0px; z-index:320; display:none; }
 .slide01_submit_popup_close_btn_mask { width:45px; height:46px; position:absolute; left:1199px; top:31px; z-index:325; }
@@ -417,21 +351,6 @@ html[xmlns] .clearfix {
 .slide06_pi_content { width: 1280px; height: 726px; background: url('slide06/pi_content.png') no-repeat left top; position: absolute; left: 0px; top: 0px; z-index: 290; display:none; }
 .slide06_picnt_clost_btn_mask { width: 76px; height: 76px; position:absolute; left:1145px; top:65px; z-index:310; }
 
-
-.submit_button {
-	position: absolute;
-	background: url(slide1/submit.png) no-repeat left top;
-  left: 80px;
-  top: 612px;
-  width: 326px;
-  height: 82px;
-	animation: pulse 1s infinite;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	display:none;
-	z-index: 999;
-}
-
 .container {
   width: 100%;
   height: 100%;
@@ -451,21 +370,14 @@ h1 {
   /*background: #fff;*/
   text-align: left;
   /*box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
-  padding: 30px;
   width: 200px;
   height: 210px;
-  margin: 10px;
-  z-index: 999;
 }
 .control {
   display: block;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 2px !important;
   cursor: pointer;
   font-size: 18px;
-  padding-bottom: 10px !important;
-  z-index: 999;
 }
 .control input {
   position: absolute;
@@ -482,15 +394,12 @@ h1 {
   left: 0;    
   background: url('disable_radio.png') no-repeat left top;
   background-size:55px 55px;
-  z-index: 999;
-  /*z-index:9999;*/
 }
 .control_radio .control_indicator {
   border-radius: none;
 }
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-  /*background: #ccc;*/
   background: url('active_radio.png') no-repeat left top;
   background-size:55px 55px;
   opacity: 1;
@@ -498,15 +407,8 @@ h1 {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
-  /*z-index:99999;*/
 }
 
-.blocker {
-  position: absolute;
-  width: 1080px;
-  height: 810px;
-  z-index: 1;
-}
 
 @keyframes fadeInOpacity {
 	0% {
@@ -642,36 +544,18 @@ h1 {
   border-top-color: #ccc;
 }
 
-.slide02_inline_wraper {
+/* .slide02_inline_wraper {
 	position: absolute;
 	width: 1080px;
     height: 810px;
 	top: 0px;
 	left:0px;
 	z-index: 999;
-}
-
-#radio01 {
-    position: absolute;
-	width: 180px;
-    height: 209px;
-    left: -37px;
-    top: -152px;
-	z-index: 999;
-}
-
-#radio02 {
-    position: absolute;
-	width: 180px;
-    height: 209px;
-    left: 165px;
-    top: -165px;
-	z-index: 999;
-}
+} */
 
 .blocker {
 	position: absolute;
 	width: 1080px;
 	height: 810px;
-	z-index: 90;
+	z-index: 20;
 }
