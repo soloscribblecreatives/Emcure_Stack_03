@@ -21,6 +21,7 @@
 	position: absolute;
 	width: 1080px;
 	height: 810px;
+	display: none;
 	z-index: 10;
 }
 
@@ -38,7 +39,6 @@
   top: 468px;
   width: 211px;
   height: 234px;
-	display: none;
 	z-index: 15;
 }
 
