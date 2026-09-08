@@ -25,6 +25,18 @@
 	z-index: 10;
 }
 
+.flash1 {
+  position: absolute;
+  left: 227px;
+  top: 343px;
+  width: 487px;
+  height: 467px;
+  animation: flash 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 7;
+}
+
 .video2 {
 	position: absolute;
 	width: 1080px;
@@ -40,6 +52,19 @@
   width: 211px;
   height: 234px;
 	z-index: 15;
+}
+
+.flash2 {
+  position: absolute;
+  left: 442px;
+  top: 343px;
+  width: 485px;
+  height: 467px;
+  display: none;
+  animation: flash 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 12;
 }
 
 .button3 {
