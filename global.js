@@ -421,15 +421,16 @@ function playVid1() {
 function playVid2() {
 	$('.button1').css("display","none");
 	$('.button2').css("display","none");
-	setTimeout(function(){ 
-		$('.button3').css("display","block");
-	}, 10000);
 	$(".video1").css("display","none");
 	var vid = document.getElementById("video1");
 	vid.pause();
 	vid.currentTime = 0;
 	$(".video2").css("display","block");
 	document.getElementById("video2").play();
+}
+
+function onEnded2() {
+	$('.button3').css("display","block");
 }
 
 function playVid3() {
