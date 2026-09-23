@@ -23,33 +23,50 @@
 
 .s2 {
 	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1080px;
-  height: 810px;
-	animation: flash 1s infinite;
+  left: 646px;
+  top: 100px;
+  width: 337px;
+  height: 639px;
+	animation: flash 2s infinite;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
 
-.tapIt {
-	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1080px;
-  height: 810px;
-	z-index: 10;
-}
-
 .s3 {
 	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1080px;
-  height: 810px;
-  display: none;
-	z-index: 15;
+  left: 63px;
+  top: 161px;
+  width: 379px;
+  height: 216px;
+	animation: fadeInRight 0.3s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 66px;
+  top: 237px;
+  width: 84px;
+  height: 71px;
+	animation: flashOff 2s infinite;
+	animation-delay: 0.4s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s5 {
+	position: absolute;
+  left: 79px;
+  top: 421px;
+  width: 354px;
+  height: 51px;
+	animation: fadeInUp 0.3s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 5;
 }
 
 /* ---------------- Custom keyframes ---------------- */
