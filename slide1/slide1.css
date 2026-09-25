@@ -23,10 +23,10 @@
 
 .s2 {
 	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1080px;
-  height: 810px;
+  left: 304px;
+  top: 258px;
+  width: 461px;
+  height: 322px;
 	animation: flash 1s infinite;
 	animation-delay: 0s;
 	animation-fill-mode: both;
