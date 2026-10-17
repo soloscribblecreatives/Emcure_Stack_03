@@ -576,11 +576,21 @@ $(document).ready(function () {
 /*--------------------------Javascript Animation-----------------------------*/
 
 function onPlay0() {
+	$('.button1').css("display","none");
 	setTimeout(function(){ 
-		$('.button1').css("display","none");
 		$('.flash1').css("display","block");
 		$('.button2').css("display","block");
 	}, 7000);
+	document.getElementById("video0").play();
+}
+
+function playVid1() {
+	$('.button1').css("display","none");
+	setTimeout(function(){ 
+		$('.flash1').css("display","block");
+		$('.button2').css("display","block");
+	}, 7000);
+	document.getElementById("video0").play();
 }
 
 function onEnded0() {
@@ -592,23 +602,20 @@ function onEnded0() {
 	document.getElementById("video1").play();
 }
 
-function playVid1() {
-	setTimeout(function(){ 
-		$('.button1').css("display","none");
-		$('.flash1').css("display","block");
-		$('.button2').css("display","block");
-	}, 7000);
-	document.getElementById("video0").play();
-}
-
 function playVid2() {
 	$('.button1').css("display","none");
 	$('.button2').css("display","none");
 	$('.flash1').css("display","none");
 	$(".video1").css("display","none");
-	var vid = document.getElementById("video1");
-	vid.pause();
-	vid.currentTime = 0;
+	
+	var vid0 = document.getElementById("video0");
+	vid0.pause();
+	vid0.currentTime = 0;
+	
+	var vid1 = document.getElementById("video1");
+	vid1.pause();
+	vid1.currentTime = 0;
+	
 	$(".video2").css("display","block");
 	document.getElementById("video2").play();
 }
