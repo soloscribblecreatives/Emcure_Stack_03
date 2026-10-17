@@ -158,10 +158,10 @@ function go_nav(direction) {
       }, 0); //pageswipe
     }
   } else {
-    if (page_id <= 3) {
+    if (page_id <= 1) {
       page_id = page_id + 1;
       //alert(page_id);
-      if (page_id == 4) {
+      if (page_id == 2) {
         flag = 1;
       }
     }
@@ -230,13 +230,7 @@ function set_pg_content(pg_id) {
   var selectedContentPath = "";
   switch (pg_id) {
     case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.png"></div><div class="s2"><img src="slide1/s2.png"></div><video preload="auto" class="s3" id="s3" width="1080" height="810"><source src="slide1/s1.mp4" type="video/mp4"></video><div class="tapIt" onclick="tapIt()"></div>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide2/s1.jpg" width="1080" height="810" alt=""></div>';
-	break;
-	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide3/s1.jpg" width="1080" height="810" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="video0"><video preload="auto" autoplay poster="slide1/Poster.png" onplay="onPlay0()" onended="onEnded0()" id="video0" width="1080" height="810"><source src="slide1/Part0.mp4" type="video/mp4"></video></div><div class="video1"><video preload="auto" loop onplay="onPlay1()" onended="onEnded1()" id="video1" width="1080" height="810"><source src="slide1/Part1.mp4" type="video/mp4"></video></div><div class="flash1"><img src="slide1/flash1.png"></div><div class="video2"><video preload="auto" onplay="onPlay2()" onended="onEnded2()" id="video2" width="1080" height="810"><source src="slide1/Part2.mp4" type="video/mp4"></video></div><div class="flash2"><img src="slide1/flash2.png"></div><div class="video3"><video preload="auto" onended="onEnded3()" id="video3" width="1080" height="810"><source src="slide1/Part3.mp4" type="video/mp4"></video></div><div class="video4"><video preload="auto" onended="onEnded4()" id="video4" width="1080" height="810"><source src="slide1/Part4.mp4" type="video/mp4"></video></div><div class="button1" onclick="playVid1()"></div><div class="button2" onclick="playVid2()"></div><div class="button3" onclick="playVid3()"></div><div class="pat1"><img src="slide1/pat1.png"></div><div class="pat2"><img src="slide1/pat2.png"></div><div class="pat3"><img src="slide1/pat3.png"></div><div class="pat4"><img src="slide1/pat4.png"></div><div class="pat5"><img src="slide1/pat5.png"></div><div class="pat6"><img src="slide1/pat6.png"></div><div class="pat7"><img src="slide1/pat7.png"></div><div class="pat8"><img src="slide1/pat8.png"></div><div class="pat9"><img src="slide1/pat9.png"></div><div class="pat10"><img src="slide1/pat10.png"></div><div class="pat11"><img src="slide1/pat11.png"></div><div class="pat12"><img src="slide1/pat12.png"></div><div class="pat13"><img src="slide1/pat13.png"></div><div class="button4" onclick="playMet()"></div><div class="met1"><img src="slide1/met1.png"></div><div class="met2"><img src="slide1/met2.png"></div><div class="met3"><img src="slide1/met3.png"></div><div class="button5" onclick="playVid4()"></div>';
 	break;
   }
 
@@ -579,71 +573,85 @@ $(document).ready(function () {
   });
 })();
 
+/*--------------------------Javascript Animation-----------------------------*/
 
-/*--------------------- animation javascript -----------------------*/
-
-function hit_pop1() {
-	$('.hit_1').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop1').css("display","none");
+function onPlay0() {
+	setTimeout(function(){ 
+		$('.button1').css("display","none");
+		$('.flash1').css("display","block");
+		$('.button2').css("display","block");
+	}, 7000);
 }
 
-function hit_pop2() {
-	$('.hit_2').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop2').css("display","none");
+function onEnded0() {
+	$(".video0").css("display","none");
+	var vid = document.getElementById("video0");
+	vid.pause();
+	vid.currentTime = 0;
+	$(".video1").css("display","block");
+	document.getElementById("video1").play();
 }
 
-function hit_pop3() {
-	$('.hit_3').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop3').css("display","none");
+function playVid1() {
+	setTimeout(function(){ 
+		$('.button1').css("display","none");
+		$('.flash1').css("display","block");
+		$('.button2').css("display","block");
+	}, 7000);
+	document.getElementById("video0").play();
 }
 
-function hit_pop4() {
-	$('.hit_4').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop4').css("display","none");
+function playVid2() {
+	$('.button1').css("display","none");
+	$('.button2').css("display","none");
+	$('.flash1').css("display","none");
+	$(".video1").css("display","none");
+	var vid = document.getElementById("video1");
+	vid.pause();
+	vid.currentTime = 0;
+	$(".video2").css("display","block");
+	document.getElementById("video2").play();
 }
 
-function hit_pop5() {
-	$('.hit_5').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop5').css("display","none");
+function onPlay2() {
+	setTimeout(function(){
+		$('.button3').css("display","block");
+		$('.flash2').css("display","none");
+	}, 25000);
 }
 
-function hit_pop6() {
-	$('.hit_6').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop6').css("display","none");
+function playVid3() {
+	$('.button1').css("display","none");
+	$('.button2').css("display","none");
+	$('.button3').css("display","none");
+	$('.flash').css("display","none");
+	$(".video2").css("display","none");
+	var vid = document.getElementById("video2");
+	vid.pause();
+	vid.currentTime = 0;
+	$(".video3").css("display","block");
+	document.getElementById("video3").play();
 }
 
-function hit_pop7() {
-	$('.hit_7').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop7').css("display","none");
+function onEnded3() {
+	$('.pat1, .pat2, .pat3, .pat4, .pat5, .pat6, .pat7, .pat8, .pat9, .pat10, .pat11, .pat12, .pat13').css("display","block");
+	setTimeout(function(){ 
+		$('.button4').css("display","block");
+	}, 6000);
 }
 
-function hit_close1() {
-	$('.hit_1').css("display","none");
-	$('.hit_2').css("display","none");
-	$('.hit_3').css("display","none");
-	$('.hit_4').css("display","none");
-	$('.hit_5').css("display","none");
-	$('.hit_6').css("display","none");
-	$('.hit_7').css("display","none");
-	$('.hit_pop1').css("display","block");
-	$('.hit_pop2').css("display","block");
-	$('.hit_pop3').css("display","block");
-	$('.hit_pop4').css("display","block");
-	$('.hit_pop5').css("display","block");
-	$('.hit_pop6').css("display","block");
-	$('.hit_pop7').css("display","block");
-	$('.hit_close1').css("display","none");
+function playMet() {
+	$('.button4').css("display","none");
+	$('.button5').css("display","block");
+	$('.met1, .met2, .met3').css("display","block");
 }
 
-function tapIt() {
-	$('.s2').css("display","none");
-	$('.s3').css("display","block");
-	document.getElementById("s3").play();
+function playVid4() {
+	$('.button5').css("display","none");
+	$(".video3").css("display","none");
+	var vid = document.getElementById("video3");
+	vid.pause();
+	vid.currentTime = 0;
+	$(".video4").css("display","block");
+	document.getElementById("video4").play();
 }
